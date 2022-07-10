@@ -22,6 +22,8 @@ while play_again != "exit":  # type exit to exit the game after 6 attempts or af
     # print(word)
     for attempt in range(1, 7):
         guess = input().lower()  # considering all the input letters as lowercase letters
+        if guess == "exit":
+            break
         m = len(guess)  # length of the guessed word
         n = len(word)  # length of the original word
         word1 = word  # initializing original word to word1
